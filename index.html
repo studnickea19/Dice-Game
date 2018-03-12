@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Let's Roll Dice</title>
+		<!-- Mobile Specific Metas-->
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	    <!-- FONT -->
+	    <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+	    <!-- CSS -->
+	    <link rel="stylesheet" href="css/normalize.css">
+	    <link rel="stylesheet" href="css/skeleton.css">
+	    <link rel="stylesheet" type="text/css" href="dicegamestyles.css">
+
+	    <!-- Favicon -->
+	    <link rel="icon" type="image/png" href="images/favicon.png">
+	</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="header">
+					<h1>Roll the Dice</h1>
+				</div>
+			</div>
+			<div class="row">
+				<div id="dice-game">
+					<h3>Welcome to Roll the Dice. Click the "Roll" button to roll the dice for each turn.</h3>
+					<h5>An even score will add 4 sides to the next dice you roll.</h5>
+					<h5>An odd score will add 2 sides to the next dice you roll.</h5>
+					<h5>Roll Out!</h5>
+				</div>
+			</div><br>
+			<div class="row">
+				<div class="roll-animation">
+					<img src="dice2.png" id="dice">	
+					</div>
+			</div><br>
+			<div class="row">
+				<div>
+					<input id="roll" class="roll-button" type="button" name="roll" value="Roll" onClick="runDiceGame()">
+				</div>
+			</div><br>
+			<div class="row">
+				<div id="displayTurns">
+				</div>
+			</div><br>
+		</div>
+		<script src="dicegamescript.js"></script>
+	</body>
+</html>
